@@ -60,13 +60,41 @@
 // console.log(lapsComp)
 
 
-let countEl=document.getElementById("count-el")
+// let name = "duygu"
+// let greeting = "hi my name is "
+// let myGreeting = greeting + name
+//console.log(myGreeting)
+
+// let point = 4
+// let bonus ="10"
+// let total = point+ bonus
+// console.log(total)
+
+// let welcomeEl = document.getElementById("welcome-el")
+// let name = "duygu"
+// let greeting = "welcome back"
+// welcomeEl.innerText = greeting +" "+ name
+
+//welcomeEl.innerText = welcomeEl.innerText+ "🥰"
+// welcomeEl.innerText += "🥰"
+
+
+let saveEl = document.getElementById("save-el")
+let countEl= document.getElementById("count-el")
 let count = 0
+
+console.log(saveEl)
+
 function increment() {
-    count = count + 1
+    count += 1
     countEl.innerText = count
 }
 
 function save(){
-    console.log(count)
+    // innerText hidden elementleri göstermez 
+    // textContent tüm elementleri gösterir
+    let countStr = count + " - "
+    saveEl.textContent += countStr
+    countEl.textContent = 0  
+    count = 0
 }
