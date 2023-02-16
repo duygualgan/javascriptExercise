@@ -38,8 +38,24 @@
 
 
 ///////////////////////
-console.log("2"+ 2)//22
-console.log(11 +7)//18
-console.log("my point :" +5 +9) //my point : 59
-console.log("11" + "12")//1112
+// console.log("2"+ 2)//22
+// console.log(11 +7)//18
+// console.log("my point :" +5 +9) //my point : 59
+// console.log("11" + "12")//1112
 
+
+
+//**************************************** */
+//rendering an error message
+//when the user clicks the purchase button, render out
+// "something went wrong, please try again" in the paragraph
+// that has the id = "error"
+
+
+let errorMesagge = document.getElementById("error")
+console.log(errorMesagge)
+
+function purchase(){
+    console.log("tıklandı")
+    errorMesagge.textContent= "something went wrong, please try again"
+}
