@@ -1,5 +1,17 @@
 // 1. Create two variables, firstCard and secondCard. 
 // Set their values to a random number between 2-11
+//************************** */
+/// arrays
+/// objects
+/// booleans
+/// if else statements
+/// comparison operators
+/// logical operators
+/// for loops
+/// the math object
+/// return statements
+
+
 
  
 let cards = []
@@ -15,6 +27,7 @@ let cardsEl = document.getElementById("cards-el")
 let player = {
      name: "Duygu",
      chips: 45
+
 }
 let playerEl = document.getElementById("player-el")
 playerEl.textContent = player.name + ": $ "+ player.chips
