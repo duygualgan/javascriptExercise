@@ -199,3 +199,5 @@ FakesAssemblies/
 *.jpg
 *.png
 *.jpeg
+
+.DS_Store
